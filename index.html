@@ -67,11 +67,9 @@
 </head>
 
 <body class="bg-white">
-    <!-- Header with Logo Space -->
     <header class="gradient-bg py-4 px-6 shadow-md">
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-center">
-                <!-- Logo Area -->
                 <div class="flex items-center justify-center gap-6 mb-4 md:mb-0">
                     <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
                         <img src="/img/LogoUdinus.png" alt="Udinus"
@@ -91,21 +89,26 @@
                     </div>
                 </div>
 
-                <!-- Navigation -->
                 <nav class="flex items-center space-x-8">
                     <a href="#beranda"
                         class="nav-link text-white font-medium hover:text-purple-100 transition">Beranda</a>
                     <a href="#kelas" class="nav-link text-white font-medium hover:text-purple-100 transition">Kelas</a>
                     <a href="#pojok-literasi"
                         class="nav-link text-white font-medium hover:text-purple-100 transition">Pojok Literasi</a>
+                    <a href="#lokasi-desa" class="nav-link text-white font-medium hover:text-purple-100 transition">Lokasi</a>
                     <a href="#kontak"
                         class="nav-link text-white font-medium hover:text-purple-100 transition">Kontak</a>
                 </nav>
             </div>
+             <div class="mt-4 flex justify-center md:justify-end">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/n7d14110d41/ungaran/" data-label_1="UNGARAN" data-label_2="Kabupaten Semarang" data-theme="original" >UNGARAN Kabupaten Semarang</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="beranda" class="py-20 hero-pattern">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center">
@@ -125,24 +128,11 @@
                 </div>
                 <div class="md:w-1/2 flex justify-center">
                     <img src="/img/permata.png" alt="Sekolah Permata">
-                    <svg class="w-full max-w-md" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#f3e8ff" d="M30,40 C150,0 350,0 470,40 L470,360 C350,400 150,400 30,360 L30,40Z">
-                        </path>
-                        <circle cx="250" cy="120" r="40" fill="#d8b4fe" />
-                        <circle cx="150" cy="180" r="30" fill="#c084fc" />
-                        <circle cx="350" cy="180" r="30" fill="#c084fc" />
-                        <path d="M175,220 Q250,280 325,220" stroke="#8b5cf6" stroke-width="8" fill="none" />
-                        <path d="M150,150 L150,300 Q250,350 350,300 L350,150" stroke="#8b5cf6" stroke-width="4"
-                            fill="#ede9fe" />
-                        <rect x="200" y="250" width="100" height="50" fill="#c084fc" rx="10" />
-                        <text x="250" y="280" text-anchor="middle" fill="white" font-size="16">Belajar</text>
-                    </svg>
-                </div>
+                    </div>
             </div>
         </div>
     </section>
 
-    <!-- Profil Desa Section -->
     <section id="profil-desa" class="py-16 bg-purple-50">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold mb-12 text-center gradient-text">Profil Desa</h2>
@@ -238,27 +228,32 @@
         </div>
     </section>
 
-    <!-- Kelas Section -->
-    <!-- Kelas Section -->
+    <section id="lokasi-desa" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center gradient-text">Lokasi Kami</h2>
+            <div class="relative w-full h-96 shadow-lg rounded-lg overflow-hidden"> <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15835.548060982836!2d110.40808881807667!3d-7.139077148432588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7088054622232d%3A0xac0c335885106e26!2sKlepu%2C%20Pringapus%2C%20Semarang%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1685860000000!5m2!1sen!2sid"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
     <section id="kelas" class="py-16">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold mb-12 text-center gradient-text">Program Kelas</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-                <!-- Template Kelas -->
-                <!-- Gunakan ulang struktur ini untuk setiap kelas -->
-
-                <!-- Kelas 1 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
                     <div
                         class="relative h-48 bg-gradient-to-r from-purple-500 to-purple-700 flex items-center justify-center">
                         <img src="/img/ibu-cakap-usaha.jpg" alt="Ibu Cakap Usaha"
                             class="absolute inset-0 w-full h-full object-cover opacity-70">
-                        <!--<div class="relative z-10">
-                        <svg class="w-20 h-20 text-white mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>-->
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-purple-800 mb-3">Ibu Cakap Usaha</h3>
@@ -276,17 +271,11 @@
                     </div>
                 </div>
 
-                <!-- Kelas 2 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
                     <div
                         class="relative h-48 bg-gradient-to-r from-purple-600 to-purple-800 flex items-center justify-center">
                         <img src="/img/ibu-rawat-bumi.jpg" alt="Ibu Rawat Bumi"
                             class="absolute inset-0 w-full h-full object-cover opacity-70">
-                        <!--<div class="relative z-10">
-                        <svg class="w-20 h-20 text-white mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"></path>
-                        </svg>
-                    </div>-->
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-purple-800 mb-3">Ibu Rawat Bumi</h3>
@@ -304,17 +293,11 @@
                     </div>
                 </div>
 
-                <!-- Kelas 3 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
                     <div
                         class="relative h-48 bg-gradient-to-r from-purple-700 to-purple-900 flex items-center justify-center">
                         <img src="/img/ibu-sejahtera.jpg" alt="Ibu Sejahtera"
                             class="absolute inset-0 w-full h-full object-cover opacity-70">
-                        <!--<div class="relative z-10">
-                        <svg class="w-20 h-20 text-white mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                        </svg>
-                    </div>-->
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-purple-800 mb-3">Ibu Sejahtera</h3>
@@ -335,14 +318,11 @@
     </section>
 
 
-    <!-- Pojok Literasi Section -->
-    <!-- Pojok Literasi Section -->
     <section id="pojok-literasi" class="py-16 bg-purple-50">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold mb-12 text-center gradient-text">Pojok Literasi</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- Artikel 1 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
                     <div class="relative h-48 overflow-hidden">
                         <img src="/img/rumahan.jpeg" alt="usaha rumahan" class="absolute inset-0 w-full h-full object-cover">
@@ -361,7 +341,6 @@
                     </div>
                 </div>
 
-                <!-- Artikel 2 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
                     <div class="relative h-48 overflow-hidden">
                         <img src="/img/berkebun-organik.jpg" alt="berkebun organik"
@@ -379,7 +358,6 @@
                     </div>
                 </div>
 
-                <!-- Artikel 3 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
                     <div class="relative h-48 overflow-hidden">
                         <img src="/img/nutrisi.jpeg" alt="nutrisi anak" class="absolute inset-0 w-full h-full object-cover">
@@ -409,12 +387,10 @@
     </section>
 
 
-    <!-- Testimonial Section -->
     <section class="py-16">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold mb-12 text-center gradient-text">Testimoni Peserta</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Testimonial 1 -->
                 <div class="bg-white p-8 rounded-xl shadow-lg relative">
                     <div
                         class="absolute -top-5 -left-5 bg-purple-600 rounded-full w-12 h-12 flex items-center justify-center">
@@ -439,7 +415,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
                 <div class="bg-white p-8 rounded-xl shadow-lg relative">
                     <div
                         class="absolute -top-5 -left-5 bg-purple-600 rounded-full w-12 h-12 flex items-center justify-center">
@@ -468,7 +443,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="kontak" class="py-16 bg-purple-50">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold mb-12 text-center gradient-text">Hubungi Kami</h2>
@@ -599,7 +573,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="gradient-bg py-10">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
@@ -614,6 +587,7 @@
                             <li><a href="#beranda" class="text-purple-100 hover:text-white transition">Beranda</a></li>
                             <li><a href="#profil-desa" class="text-purple-100 hover:text-white transition">Profil
                                     Desa</a></li>
+                            <li><a href="#lokasi-desa" class="text-purple-100 hover:text-white transition">Lokasi</a></li>
                             <li><a href="#kelas" class="text-purple-100 hover:text-white transition">Kelas</a></li>
                             <li><a href="#pojok-literasi" class="text-purple-100 hover:text-white transition">Pojok
                                     Literasi</a></li>
@@ -631,7 +605,7 @@
                 </div>
             </div>
             <div class="border-t border-purple-400 mt-8 pt-8 text-center">
-                <p class="text-purple-100">&copy; 2025 PPKO KAMADIKSI UDINUS. Hak Cipta Dilindungi.</p>
+                <p class="text-purple-100">© 2025 PPKO KAMADIKSI UDINUS. Hak Cipta Dilindungi.</p>
             </div>
         </div>
     </footer>
@@ -658,7 +632,6 @@
             });
         }
     </script>
-    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'941265f1e04f5f44',t:'MTc0NzQ3NzM5NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
-</body>
+    </body>
 
 </html>
